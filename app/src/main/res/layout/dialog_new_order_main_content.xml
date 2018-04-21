@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/info_rl"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/amap_main_blue"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="22dp"
+            android:layout_marginTop="22dp"
+            >
+
+            <TextView
+                android:id="@+id/order_type_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/dialog_new_order_type"
+                android:padding="20px"
+                android:text="实时"
+                android:textColor="#fff"
+                android:textSize="15sp"
+                />
+
+            <ImageView
+                android:id="@+id/close_iv"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="25dp"
+                android:src="@mipmap/driver_sdk_close_normal"
+                />
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <!--公里数的展示-->
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                  android:id="@+id/dis_info_rl"
+                  android:layout_below="@id/info_rl"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:background="@color/amap_main_blue"
+                  android:orientation="horizontal"
+                  android:paddingBottom="20dp"
+                  android:weightSum="2">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                <TextView
+                    android:id="@+id/passenger_distance_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0.5"
+                    android:textColor="#ffffff"
+                    android:textSize="24sp"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="公里"
+                    android:textColor="#ffffff"
+                    android:textSize="12sp"
+                    />
+            </LinearLayout>
+
+            <TextView
+                android:layout_marginLeft="2dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="接驾"
+                android:textColor="#ffffff"
+                android:textSize="14sp"
+                />
+        </LinearLayout>
+
+        <View
+            android:layout_width="2px"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:background="#99ffffff"></View>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                <TextView
+                    android:id="@+id/order_distance_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="9.5"
+                    android:textColor="#ffffff"
+                    android:textSize="24sp"
+                    />
+
+                <TextView
+                    android:layout_marginLeft="2dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="公里"
+                    android:textColor="#ffffff"
+                    android:textSize="14sp"
+                    />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="全程"
+                android:textColor="#ffffff"
+                android:textSize="14sp"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- 起终点的显示 -->
+    <LinearLayout
+        android:layout_below="@id/dis_info_rl"
+        android:id="@+id/start_end_rl"
+        android:paddingLeft="16dp"
+        android:paddingRight="6dp"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:background="#f9f9fb"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            >
+
+            <ImageView
+                android:id="@+id/start_icon"
+                android:layout_marginTop="5dp"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:src="@mipmap/maprouter_nextaboard_point_in_map"/>
+            <TextView
+                android:id="@+id/start_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="和平西桥"
+                android:layout_toRightOf="@id/start_icon"
+                android:layout_marginLeft="2dp"
+                android:layout_alignParentTop="true"
+                android:maxLines="3"
+                android:textColor="#000"
+                android:textSize="24sp"
+                />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            >
+
+            <ImageView
+                android:id="@+id/dest_icon"
+                android:layout_marginTop="5dp"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:src="@mipmap/maprouter_nextdebus_point_in_map"/>
+            <TextView
+                android:id="@+id/dest_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="朝阳大悦城"
+                android:layout_toRightOf="@id/dest_icon"
+                android:layout_marginLeft="2dp"
+                android:layout_alignParentTop="true"
+                android:maxLines="3"
+                android:textColor="#000"
+                android:textSize="24sp"
+                />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:layout_alignParentBottom="true"
+        android:id="@+id/arrow"
+        android:layout_width="36dp"
+        android:layout_height="48dp"
+        android:layout_centerHorizontal="true"
+        android:src="@mipmap/abc_spinner_mtrl_am_alpha"
+        />
+
+    <RelativeLayout
+        android:layout_below="@id/start_end_rl"
+        android:layout_above="@id/arrow"
+        android:layout_marginBottom="-20dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#fff">
+    </RelativeLayout>
+
+</RelativeLayout>

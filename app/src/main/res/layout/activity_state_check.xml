@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#f7f7f7"
+                android:orientation="vertical">
+    <LinearLayout
+        android:id="@+id/total_info_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@color/amap_main_blue"
+        android:paddingTop="50dp"
+        android:orientation="vertical"
+        >
+
+        <LinearLayout
+            android:layout_gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#fff"
+                android:textSize="60sp"
+                android:text="0"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#fff"
+                android:textSize="20sp"
+                android:text="项"
+                />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="20dp"
+            android:text="您的软件无异常"
+            android:textColor="#fff"
+            android:textSize="18sp"
+            />
+    </LinearLayout>
+    
+    <LinearLayout
+        android:background="@null"
+        android:layout_below="@id/total_info_ll"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.amap.driverdemo.module.statecheck.widget.StateCheckResItemWidget
+            android:id="@+id/item1"
+            android:layout_width="match_parent"
+            android:background="#fff"
+            android:layout_height="wrap_content">
+        </com.amap.driverdemo.module.statecheck.widget.StateCheckResItemWidget>
+
+        <com.amap.driverdemo.module.statecheck.widget.StateCheckResItemWidget
+            android:id="@+id/item2"
+            android:layout_marginTop="20dp"
+            android:background="#fff"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </com.amap.driverdemo.module.statecheck.widget.StateCheckResItemWidget>
+
+        <com.amap.driverdemo.module.statecheck.widget.StateCheckResItemWidget
+            android:id="@+id/item3"
+            android:layout_marginTop="20dp"
+            android:background="#fff"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </com.amap.driverdemo.module.statecheck.widget.StateCheckResItemWidget>
+    </LinearLayout>
+
+
+    <com.amap.driverdemo.common.widget.OpaqueBackTitleBar
+        android:id="@+id/title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true">
+    </com.amap.driverdemo.common.widget.OpaqueBackTitleBar>
+</RelativeLayout>

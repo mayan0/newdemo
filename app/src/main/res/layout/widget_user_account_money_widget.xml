@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:background="#fff"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/label"
+            android:layout_marginTop="45dp"
+            android:layout_centerHorizontal="true"
+            android:text="余额(元)"
+            android:textColor="#282c32"
+            android:textSize="14sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/money_tv"
+            android:layout_below="@id/label"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="80dp"
+            android:layout_centerHorizontal="true"
+            android:text="1268.00"
+            android:textColor="#282c32"
+            android:textSize="32sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+</RelativeLayout>

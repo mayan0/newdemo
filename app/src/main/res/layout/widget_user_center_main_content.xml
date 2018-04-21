@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--底部的立即出车的button-->
+    <com.amap.driverdemo.module.usercenter.widget.UserCenterBottomBtnWidget
+        android:id="@+id/bottom_btn_area"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        >
+    </com.amap.driverdemo.module.usercenter.widget.UserCenterBottomBtnWidget>
+
+    <!--订单收入、接单数的展示view-->
+    <com.amap.driverdemo.module.usercenter.widget.UserCenterHeadContentWidget
+        android:id="@+id/head_info_area"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        >
+    </com.amap.driverdemo.module.usercenter.widget.UserCenterHeadContentWidget>
+
+    <!--订单列表-->
+    <com.amap.driverdemo.module.userorderlist.UserCenterOrderListWidget
+        android:id="@+id/order_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/bottom_btn_area"
+        android:layout_below="@id/head_info_area"
+        >
+    </com.amap.driverdemo.module.userorderlist.UserCenterOrderListWidget>
+
+    <!--消息为空的提示-->
+    <com.amap.driverdemo.module.usercenter.widget.UserCenterEmptyMsgListWidget
+        android:id="@+id/empty_hint"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/bottom_btn_area"
+        android:layout_below="@id/head_info_area"
+        android:visibility="gone"
+        >
+    </com.amap.driverdemo.module.usercenter.widget.UserCenterEmptyMsgListWidget>
+</merge>

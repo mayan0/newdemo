@@ -1,0 +1,7 @@
+<resources>
+    <declare-styleable name="BtnPulse">
+        <attr name="pulse_duration" format="integer"/>
+        <attr name="pulse_color" format="color"/>
+        <attr name="pulse_delay" format="integer"/>
+    </declare-styleable>
+</resources>

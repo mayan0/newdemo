@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffffff"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.amap.driverdemo.module.login.PassportTitleBar
+        android:id="@+id/title_bar"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp">
+    </com.amap.driverdemo.module.login.PassportTitleBar>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="67.5dip"
+        android:paddingLeft="32dip"
+        android:paddingRight="32dip">
+    <include
+        android:id="@+id/passport_index_inputmobile"
+        layout="@layout/regist_input_mobile"/>
+
+    <Button
+        android:textSize="@dimen/passport_text_size_h16"
+        android:id="@+id/passport_mobile_next"
+        android:textColor="@color/white"
+        android:background="@color/amap_blue"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="22.0dip"
+        android:minHeight="44.0dip"
+        android:text="@string/passport_mobile_next_step" />
+    <include
+        android:id="@+id/passport_container_term_argee"
+        layout="@layout/regist_passport_container"/>
+</LinearLayout>
+</LinearLayout>

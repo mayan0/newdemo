@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:gravity="left"
+    android:padding="15dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_order_state"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/blue"
+        android:textColor="@color/white"
+        android:layout_marginLeft="3dp"
+        android:padding="3dp"
+        android:text="已完成"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/tv_order_distance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:gravity="center"
+        android:padding="3dp"
+        android:text="行驶距离12.11公里  行驶时间56分钟"
+        android:textSize="16sp" />
+</LinearLayout>

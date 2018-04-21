@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#f0eff5"
+                android:orientation="vertical">
+
+    <com.amap.driverdemo.common.widget.BackTitleBar
+        android:id="@+id/title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_bar_height"
+        android:layout_alignParentTop="true">
+    </com.amap.driverdemo.common.widget.BackTitleBar>
+
+    <TextView
+        android:id="@+id/title_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="20dp"
+        android:gravity="center_vertical"
+        android:textColor="#292b30"
+        android:textSize="18sp"
+        />
+
+    <TextView
+        android:id="@+id/cancel_tv"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="#fff"
+        android:gravity="center_vertical|center_horizontal"
+        android:text="退出"
+        android:textColor="#292b30"
+        android:textSize="18sp"
+        />
+
+    <com.amap.driverdemo.common.widget.SettingListWidget
+        android:id="@+id/setting_list_widget"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/cancel_tv"
+        android:layout_below="@id/title_bar"></com.amap.driverdemo.common.widget.SettingListWidget>
+</RelativeLayout>

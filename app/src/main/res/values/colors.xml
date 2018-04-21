@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="activity_main_bg">#fff</color>
+    <color name="title_bar_bg_color">#272b33</color>
+    <color name="amap_main_blue">#4287Ff</color>
+    <color name="verify_code_color">#3a3a3a</color>
+    <color name="user_status_subtitle_checked_color">#6cbd03</color>
+    <color name="user_status_subtitle_unchecked_color">#9da4b3</color>
+    <color name="user_status_title_checked_color">#333333</color>
+    <color name="user_status_circle_color_checked">#637381</color>
+    <color name="user_status_circle_color_unchecked">#d2d8e4</color>
+    <color name="amap_blue">#4287Ff</color>
+    <color name="transparent">#00000000</color>
+    <color name="white">#ffffffff</color>
+    <color name="black">#ff000000</color>
+    <color name="red">#ffff0000</color>
+    <color name="passport_black">#ff000000</color>
+    <color name="passport_black1">#ff333333</color>
+    <color name="passport_black2">#ff666666</color>
+    <color name="passport_black3">#ff999999</color>
+    <color name="passport_black4">#ffcccccc</color>
+    <color name="passport_black5">#ffe5e5e5</color>
+    <color name="passport_title_bar_bg_color">#ff262d32</color>
+    <color name="blue">#5e93f8</color>
+    <color name="text_color_white">#ffffffff</color>
+    <color name="yellow">#ffffff00</color>
+    <color name="colorslidedark">#ff1f5099</color>
+    <color name="gray">#c6d1e2</color>
+    <color name="darkgray">#3d434c</color>
+    <color name="lightgrey">#f3f3f3</color>
+</resources>

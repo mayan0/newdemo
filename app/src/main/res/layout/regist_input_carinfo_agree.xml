@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:layout_gravity="left"
+    android:orientation="horizontal"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/login_margin_left"
+    android:layout_marginRight="@dimen/login_margin_left"
+    android:layout_marginBottom="@dimen/regist_car_agree_margin_bottom_dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <CheckBox
+        android:id="@+id/service_agreement"
+        android:background="@drawable/check_btn_service_agreement_selector"
+        android:layout_width="24.0dip"
+        android:layout_height="24.0dip"
+        android:layout_marginLeft="@dimen/register_edittext_txt_margin_left"
+        android:button="@color/transparent" />
+    <TextView
+        android:textSize="13.0dip"
+        android:textColor="@color/black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="7.0dip"
+        android:text="@string/regist_service_agreement" />
+    <TextView
+        android:id="@+id/tv_service_agreement"
+        android:textSize="13.0dip"
+        android:textColor="@color/amap_blue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/regist_service_workagreement" />
+</LinearLayout>

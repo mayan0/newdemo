@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:background="@color/passport_black5"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.amap.driverdemo.common.widget.BackTitleBar
+        android:id="@+id/title_bar"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp">
+    </com.amap.driverdemo.common.widget.BackTitleBar>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1.0">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <include
+                android:id="@+id/regist_input_carnfomation"
+                layout="@layout/regist_input_carnfo"/>
+            <include
+                android:id="@+id/regist_input_identitycard"
+                layout="@layout/regist_input_carinfo_identitycard"/>
+            <include
+                android:id="@+id/regist_input_drivelicence"
+                layout="@layout/regist_input_carinfo_drivelicence"/>
+            <include
+                android:id="@+id/regist_input_vehilicence"
+                layout="@layout/regist_input_carinfo_vehiclelicence"/>
+            <include
+                android:id="@+id/regist_input_taxicard"
+                layout="@layout/regist_input_carinfo_taxicard"/>
+            <include
+                android:id="@+id/regist_input_carpicture"
+                layout="@layout/regist_input_carinfo_carpicture"/>
+            <Button
+                android:textSize="@dimen/passport_text_size_h16"
+                android:id="@+id/passport_carinfo_submit"
+                android:textColor="@color/white"
+                android:background="@color/amap_blue"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15.0dip"
+                android:layout_marginBottom="10.0dip"
+                android:layout_marginLeft="10.0dip"
+                android:layout_marginRight="10.0dip"
+                android:minHeight="44.0dip"
+                android:text="@string/passport_submit" />
+            <include
+                android:id="@+id/carinfo_agree"
+                layout="@layout/regist_input_carinfo_agree"/>
+        </LinearLayout>
+
+
+    </ScrollView>
+
+</LinearLayout>

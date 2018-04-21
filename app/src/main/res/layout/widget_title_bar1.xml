@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:background="@color/colorslidedark">
+
+    <ImageButton
+        android:id="@+id/btn_titlebar_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/transparent"
+        android:layout_margin="10dp"
+        android:src="@drawable/ic_btn_back" />
+
+    <TextView
+        android:id="@+id/tv_titlebar_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_margin="10dp"
+        android:gravity="center_horizontal"
+        android:text="去接乘客"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/btn_titlebar_more"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/transparent"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom= "10dp"
+        android:layout_marginRight="20dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:text="更多"
+        android:textColor="@color/gray"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+</RelativeLayout>

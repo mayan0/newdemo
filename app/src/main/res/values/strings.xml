@@ -1,0 +1,82 @@
+<resources>
+    <string name="app_name">司机端</string>
+    <string name="user_center_title">司机端</string>
+
+    <string name="app_title">出租车司机</string>
+    <string name="title_login">司机登录</string>
+    <string name="passport_please_enter_phone">请输入手机号</string>
+    <string name="passport_set_password">设置密码</string>
+    <string name="passport_signup">注册</string>
+    <string name="passport_phone_number">手机号</string>
+    <string name="login_register_btn">出租车司机注册</string>
+    <string name="login_forget_pwd_txt">忘记密码？</string>
+    <string name="login_btn">登 录</string>
+    <string name="service_agreement">《出租车平台服务协议》</string>
+    <string name="login_input_i_agree">同意</string>
+    <string name="login_passord_txt">请输入密码</string>
+    <string name="pwd">密码</string>
+    <string name="login_phone_number_txt">手机号</string>
+    <string name="login_phone_txt">请输入手机号</string>
+    <string name="passport_input_mobile_country">手机号归属地</string>
+    <string name="passport_mobile_next_step">下一步</string>
+    <string name="passport_login_term_agreed">我已阅读并同意<b>诉讼管辖约定</b>"等粗体标示条款
+"<a href="https://qcs.meituan.com/r/fe/serviceProtocol">《xx打车服务协议》</a>\u0009<a href="https://qcs.meituan.com/r/fe/softProtocol">《支付服务协议》</a></string>
+
+
+    <string name="passport_add_car">有车加入</string>
+    <string name="passport_driver_info">司机信息</string>
+    <string name="passport_please_enter_name">请输入身份证真实姓名</string>
+    <string name="passport_please_enter_idnum">请输入真实身份证号</string>
+    <string name="passport_please_enter_time">请选择领取时间</string>
+    <string name="passport_name">姓名</string>
+    <string name="passport_idnum">身份证号</string>
+    <string name="passport_time">初次领取驾驶证日期</string>
+
+    <string name="passport_car_info">车辆信息</string>
+    <string name="passport_carid">车牌号</string>
+    <string name="passport_carname">车主姓名</string>
+    <string name="passport_cartime">车辆注册时间</string>
+    <string name="passport_please_enter_carid">请输入车牌后6位</string>
+    <string name="passport_please_enter_carname">请填写车主姓名</string>
+    <string name="passport_please_enter_cartime">请选择注册时间</string>
+
+
+    <string name="passport_identity">身份证人像面</string>
+    <string name="passport_identity_back">身份证国徽面</string>
+    <string name="passport_webtaxi_card">网约车从业资格证</string>
+    <string name="passport_drivelicence">驾驶证照片</string>
+    <string name="passport_vehiclelicence">机动车行驶证</string>
+    <string name="passport_carpicture">人车合影</string>
+    <string name="passport_next_step">下一步</string>
+    <string name="passport_submit">提交</string>
+
+    <string name="dialog_drivedate">初次领取驾驶证日期</string>
+
+
+    <string name="regist_picture_title_identity">身份证人像面</string>
+    <string name="regist_picture_title_drivelicence">驾驶证</string>
+    <string name="regist_picture_title_vehiclelicence">机动车行驶证</string>
+    <string name="regist_picture_title_taxicard">出租车驾驶员服务监督卡</string>
+    <string name="regist_picture_title_webtaxilicence">网约车从业资格证</string>
+    <string name="regist_picture_title_carpicture">人车合影</string>
+
+
+    <string name="regist_picture_claim_identity">请保持身份证照片无反光无遮挡、所有信息清晰可辨认</string>
+    <string name="regist_picture_claim_drivelicence">请拍摄驾驶证左侧信息，驾驶证信息清晰可辨，无反光无遮挡</string>
+    <string name="regist_picture_claim_vehiclelicence">请拍摄行驶证左侧信息，行驶证信息清晰可辨认，无反光无遮挡</string>
+    <string name="regist_picture_claim_taxicard">请保持服务监督卡照片无反光无遮挡、所有信息清晰可辨认</string>
+    <string name="regist_picture_claim_webtaxilicence">请及时到交管局办理该证件，未上传的车主注册后平台将提醒您补录，以保证您可以出车</string>
+    <string name="regist_picture_claim_carpicture">需司机头像、车牌号清晰可辨认</string>
+
+    <string name="regist_service_agreement">点击"提交"代表已同意</string>
+    <string name="regist_service_workagreement">《劳务协议》</string>
+    <string name="order_state_des_pick">到达上车点</string>
+    <string name="order_state_des_wait">开始服务</string>
+    <string name="order_state_des_onboard">到达目的地</string>
+
+    <string name="titlebar_des_pick">去接乘客</string>
+    <string name="titlebar_des_wait">等待乘客</string>
+    <string name="titlebar_des_onboard">送乘客</string>
+    <string name="titlebar_des_order_detail">订单详情</string>
+
+</resources>

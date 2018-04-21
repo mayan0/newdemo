@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:elevation="3dp"
+    android:orientation="vertical">
+    <FrameLayout
+        android:id="@+id/panel_order_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/tv_divideline"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/gray" />
+    <FrameLayout
+        android:id="@+id/panel_user_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <ImageButton
+        android:id="@+id/btn_orderinfo_panel_expand"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/lightgrey"
+        android:padding="4dip"
+        android:src="@drawable/bg_userinfo_panel_takeback"/>
+</LinearLayout>

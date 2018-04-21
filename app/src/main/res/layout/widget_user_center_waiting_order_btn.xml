@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+       xmlns:BtnPulse="http://schemas.android.com/apk/res-auto">
+
+    <com.amap.driverdemo.module.usercenter.widget.UserCenterPulseLayout
+        android:id="@+id/pulse_rl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        BtnPulse:pulse_duration="800"
+        BtnPulse:pulse_delay="2000"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal|center_vertical"
+            android:text="听单中"
+            android:textColor="@color/amap_main_blue"
+            android:textSize="20sp"
+            />
+    </com.amap.driverdemo.module.usercenter.widget.UserCenterPulseLayout>
+
+</merge>

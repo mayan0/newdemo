@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/sp_titlebar"
+        layout="@layout/widget_title_bar1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true" />
+
+    <include
+        android:id="@+id/sp_orderstate_panel"
+        layout="@layout/widget_orderstate_complete"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/sp_titlebar" />
+
+    <include
+        android:id="@+id/sp_orderinfo_bar"
+        layout="@layout/widget_orderinfo_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/sp_orderstate_panel" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/btn_stop_recive_order"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#272727"
+            android:layout_margin="3dp"
+            android:layout_weight="5"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:text="停止听单"/>
+        <Button
+            android:id="@+id/btn_goto_homepage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorslidedark"
+            android:layout_margin="3dp"
+            android:layout_weight="3"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:textColor="@color/white"
+            android:text="返回首页"/>
+    </LinearLayout>
+
+
+</RelativeLayout>

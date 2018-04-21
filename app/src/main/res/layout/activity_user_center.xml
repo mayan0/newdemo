@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:background="@color/activity_main_bg"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+        <com.amap.driverdemo.module.usercenter.widget.UserCenterTitleBar
+            android:id="@+id/title_bar"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/title_bar_height">
+        </com.amap.driverdemo.module.usercenter.widget.UserCenterTitleBar>
+
+        <com.amap.driverdemo.module.usercenter.widget.UserCenterMainContentWidget
+            android:id="@+id/user_content_widget"
+            android:layout_alignParentBottom="true"
+            android:layout_below="@id/title_bar"
+            android:visibility="visible"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        </com.amap.driverdemo.module.usercenter.widget.UserCenterMainContentWidget>
+
+        <com.amap.driverdemo.module.usercenter.widget.UserCenterSignupStatusWidget
+            android:id="@+id/user_signup_status_widget"
+            android:layout_alignParentBottom="true"
+            android:layout_below="@id/title_bar"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        </com.amap.driverdemo.module.usercenter.widget.UserCenterSignupStatusWidget>
+
+
+    </RelativeLayout>
+
+    <com.amap.driverdemo.module.usercenter.widget.UserCenterLeftDrawerWidget
+        android:id="@+id/left_drawer"
+        android:layout_width="240dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:background="#FFFFFF"/>
+</android.support.v4.widget.DrawerLayout>
+

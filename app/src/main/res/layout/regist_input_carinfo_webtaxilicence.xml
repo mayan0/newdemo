@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        android:orientation="vertical"
+        android:background="#ffffffff"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:text="@string/passport_webtaxi_card"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="100dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="@dimen/login_margin_left"
+            android:layout_marginRight="@dimen/login_margin_left"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/carinfo_shape"
+            android:gravity="center|left"
+            android:textColor="@color/amap_blue"
+            android:text="请及时到交管局办理该证件，未上传的车主注册后平台将提醒您补录，以保证您可以出车" />
+
+    </LinearLayout>
+
+</LinearLayout>

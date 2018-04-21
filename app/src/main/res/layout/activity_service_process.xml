@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rootview"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <include
+        android:id="@+id/sp_orderstate_change_bar"
+        layout="@layout/widget_orderstate_change_bar"
+        android:layout_width="fill_parent"
+        android:layout_height="70.0dip"
+        android:layout_alignParentBottom="true" />
+
+    <com.amap.api.maps.TextureMapView
+        android:id="@+id/mapview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@id/sp_orderstate_change_bar" />
+
+    <TextView
+        android:id="@+id/tv_service_tip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="center"
+        android:padding="8dp"
+        android:textSize="18sp"
+        android:text="距离乘客3.8公里，预计10分钟后到达"
+        android:layout_above="@id/sp_orderstate_change_bar"/>
+
+    <ImageButton
+        android:id="@+id/sp_btn_navigation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_above="@id/tv_service_tip"
+        android:layout_margin="10dp"
+        android:background="@color/transparent"
+        android:src="@drawable/bg_navigation_selector"
+        />
+
+    <include android:id="@+id/sp_titlebar"
+        layout="@layout/widget_title_bar1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"/>
+
+    <include
+        android:id="@+id/sp_orderinfo_bar"
+        layout="@layout/widget_orderinfo_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/sp_titlebar"/>
+</RelativeLayout>

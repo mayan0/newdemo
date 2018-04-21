@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+        android:id="@+id/start_btn"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:visibility="visible"
+        android:text="立即出车"
+        android:textColor="#fff"
+        android:gravity="center_vertical|center_horizontal"
+        android:textSize="26sp"
+        android:background="@color/amap_main_blue"
+        >
+    </TextView>
+
+    <!--出车之后显示的button和设置按钮 . 默认为gone-->
+    <RelativeLayout
+        android:id="@+id/info_btn_area"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:background="#262d32"
+        android:visibility="gone"
+        >
+
+        <ImageView
+            android:id="@+id/config_btn"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentLeft="true"
+            android:src="@mipmap/ic_setting_dispatch_type"
+            android:layout_centerVertical="true"
+            >
+        </ImageView>
+
+        <TextView
+            android:id="@+id/left_divider"
+            android:layout_width="1dp"
+            android:background="#161a20"
+            android:layout_height="fill_parent"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="12dp"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/config_btn"
+            />
+
+        <TextView
+            android:id="@+id/stop_btn"
+            android:text="收车"
+            android:textSize="20sp"
+            android:textColor="#fff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            >
+        </TextView>
+
+        <TextView
+            android:id="@+id/rht_divider"
+            android:layout_width="1dp"
+            android:background="#161a20"
+            android:layout_height="fill_parent"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="12dp"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@id/stop_btn"
+            />
+
+        <com.amap.driverdemo.module.usercenter.widget.UserCenterWaitingOrderBtnWidget
+            android:id="@+id/waiting_order_btn"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_toLeftOf="@id/rht_divider"
+            android:layout_toRightOf="@id/left_divider"
+            >
+        </com.amap.driverdemo.module.usercenter.widget.UserCenterWaitingOrderBtnWidget>
+    </RelativeLayout>
+</merge>

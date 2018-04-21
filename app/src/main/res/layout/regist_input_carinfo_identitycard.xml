@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+    android:orientation="vertical"
+    android:background="#ffffffff"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="10dp">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="@string/passport_identity"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="@color/passport_black2"
+        android:textSize="14sp"
+        android:text="(必填)"/>
+        <com.amap.driverdemo.module.login.RigistPhotoLayout
+            android:id="@+id/regist_identitycard_layout"
+            android:layout_width="300dp"
+            android:layout_height="180dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/identitycard">
+        </com.amap.driverdemo.module.login.RigistPhotoLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="@dimen/login_margin_left"
+        android:layout_marginRight="@dimen/login_margin_left"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/carinfo_shape"
+        android:gravity="center|left"
+        android:textColor="@color/amap_blue"
+        android:text="请保持身份证照片无反光无遮挡、所有信息清晰可辨认" />
+
+</LinearLayout>
+<LinearLayout
+android:orientation="vertical"
+android:background="#ffffffff"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:layout_marginTop="10dp">
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:textColor="@color/black"
+    android:layout_marginTop="20dp"
+    android:gravity="center"
+    android:text="@string/passport_identity_back"/>
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:textColor="@color/passport_black2"
+    android:textSize="14sp"
+    android:text="(必填)"/>
+    <com.amap.driverdemo.module.login.RigistPhotoLayout
+        android:id="@+id/regist_identitycard_layout_back"
+        android:layout_width="300dp"
+        android:layout_height="180dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/identitycard">
+    </com.amap.driverdemo.module.login.RigistPhotoLayout>
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:layout_marginLeft="@dimen/login_margin_left"
+    android:layout_marginRight="@dimen/login_margin_left"
+    android:layout_marginTop="20dp"
+    android:layout_marginBottom="20dp"
+    android:background="@drawable/carinfo_shape"
+    android:gravity="center|left"
+    android:textColor="@color/amap_blue"
+    android:text="请保持身份证照片无反光无遮挡、所有信息清晰可辨认" />
+
+</LinearLayout>
+</LinearLayout>
